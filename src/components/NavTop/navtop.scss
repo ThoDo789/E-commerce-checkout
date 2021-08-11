@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+@import "../../index.scss";
+.nav-top__container{
+  width: 100%;
+  border: 2px solid #FAFAFB;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-top__wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.nav-top__left{
+
+  display: flex;
+  &--la{
+    display: flex;
+     font-size: 20px;
+   align-items: center;
+   margin-right: 26px;
+ 
+ }
+ .icon-arrow{
+  display: inline-block;
+  height: 4px;
+  width: 6.67px;
+  margin-left: 6px;
+}
+}
+
+.nav-top-right{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__actions{
+   display: flex;
+    align-items: center;
+    font-family: 'proxima-nova', sans-serif;
+    margin-right: 32px;
+    font-size: 20px;
+    position: relative;
+    &--cart{
+      height:24px;
+      width: 24px;
+
+    }
+    &--icon{
+      height: 20px;
+      width: 20px;
+      margin:0  7px; 
+
+    }
+  
+    &--amount{
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: $color-icons;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $color-background;
+      top:-8px;
+      right:-5px;
+
+    }
+    &--item{
+     
+        margin-right: 32px;
+    }
+    &--price{
+      
+      color: #939393;
+    }
+  }
+}

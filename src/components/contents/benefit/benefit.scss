@@ -1,0 +1,138 @@
+@import "../../../index.scss";
+.benefits{
+  width:$with-section;
+  margin: 0 auto;
+display: flex;
+justify-content: center;
+align-items: center;
+&__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  margin:0 15px;
+margin-bottom: 120px;
+
+  &--img{
+  
+    object-fit: cover;
+    margin-bottom: 50px;
+
+  }
+  &--title{
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    
+  }
+  &--text{
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    padding:0 50px; 
+
+  }
+
+}
+}
+.latest-new{
+  // width:100%;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  &__title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 51px;
+    margin-bottom: 72px;
+  }
+  &__list{
+    display: flex;
+    justify-content: center;
+
+      &--item{
+          display: flex;
+          flex: 0 0  30%;
+          max-width: 30%;
+          align-items: center;;
+          &--img{
+            // width: 100%;
+            object-fit: cover;
+            height: auto;
+          }
+          &__content{
+            &--time{
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 27px;
+              color: #C1C8CE;
+            }
+            &--title{
+              font-weight: 600;
+              font-size: 22px;
+              line-height: 33px;
+            }
+            &--text{
+              font-size: 18px;
+              line-height: 22px;
+            }
+          }
+      }
+  }
+
+}
+
+.feature-product{
+  margin:  0 auto;
+  margin-bottom: 120px;
+    &__content{
+      display: flex;
+
+    }
+    &__list{
+       display: flex;
+      justify-content: center;
+      align-items: center;;
+      margin: 0 -15px;
+    }
+    &__content{
+        margin:  0 15px;
+      &--img{
+        object-fit: cover;
+        
+      }
+      &--info{
+        padding-left:  24px;
+        &--title{
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 27px;
+          margin-bottom: 18px;
+        }
+      }
+      &--discount{
+        margin-top: 18px;
+        &--price{
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 30px;
+          color:$color-red;
+        }
+        &--old-price{
+          font-size: 20px;
+          line-height: 24px;
+          text-decoration: line-through;
+          color: #C1C8CE;
+          padding: 0 5px;
+
+        }
+      }
+
+    }
+} 
